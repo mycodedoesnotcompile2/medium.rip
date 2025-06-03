@@ -16,6 +16,7 @@ import (
 )
 
 func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine, fs http.FileSystem) {
+	// more Fiber options at https://docs.gofiber.io/api/fiber/
 	app := fiber.New(fiber.Config{
 		StreamRequestBody:     true,
 		ServerHeader:          "Katbox",
