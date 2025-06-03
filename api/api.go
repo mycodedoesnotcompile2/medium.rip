@@ -22,6 +22,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		AppName:               "Katbox",
 		DisableStartupMessage: true,
 		Views: engine,
+		Network: "tcp",
 	})
 
 	// static file server
